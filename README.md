@@ -1,13 +1,28 @@
 # ColorLSP
 
-[![Zed Extension](https://img.shields.io/badge/-Zed_Extension-blue?style=flat&logo=zedindustries&logoColor=%23FFFFFF&logoSize=auto&labelColor=%23111111&color=%23084CCF)](https://zed.dev/extensions/color-highlight)
-[![CI](https://github.com/huacnlee/color-lsp/actions/workflows/test.yml/badge.svg)](https://github.com/huacnlee/color-lsp/actions/workflows/test.yml)
+ColorLSP is a Language Server Protocol (LSP) implementation providing [textDocument/documentColor](https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_documentColor)
 
-ColorLSP is a Language Server Protocol (LSP) implementation for the highlight colors in documents, to provide [textDocument/documentColor](https://microsoft.github.io/language-server-protocol/specifications/specification-current/#textDocument_documentColor).
+# Zed extension
 
-## Zed Color Highlight
+![Zed Extension](https://img.shields.io/badge/-Zed_Extension-blue?style=flat&logo=zedindustries&logoColor=%23FFFFFF&logoSize=auto&labelColor=%23111111&color=%23084CCF)
 
-<img width="1285" alt="SCR-20250626-oney" src="https://github.com/user-attachments/assets/a1a211d9-dec4-440b-8c74-848d7b03ff52" />
+Show color previews in your editor based on color-lsp by LSP document colors (forked to enable the extension for more languages).
+
+<img width="1285" alt="Screenshot of a Zed editor window with the extension enabled" src="https://github.com/user-attachments/assets/a1a211d9-dec4-440b-8c74-848d7b03ff52" />
+
+### Usage
+
+After installing the extension via `Install Dev Extension`, add the following to your Zed `settings.json`:
+
+```js
+{
+    // ...
+    // "inlay" adds a box next to the color code,
+    // "background" changes the color code's background
+    "lsp_document_colors": "inlay",
+    // ...
+}
+```
 
 ## License
 

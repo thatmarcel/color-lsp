@@ -1,18 +1,22 @@
-# Zed Color Highlight
+# Zed Color Highlighting
 
-[![Zed Extension](https://img.shields.io/badge/-Zed_Extension-blue?style=flat&logo=zedindustries&logoColor=%23FFFFFF&logoSize=auto&labelColor=%23111111&color=%23084CCF)](https://zed.dev/extensions/color-highlight)
+![Zed Extension](https://img.shields.io/badge/-Zed_Extension-blue?style=flat&logo=zedindustries&logoColor=%23FFFFFF&logoSize=auto&labelColor=%23111111&color=%23084CCF)
 
-Highlight colors in your editor based on color-lsp by LSP document colors.
+Show color previews in your editor based on color-lsp by LSP document colors (forked to enable the extension for more languages).
 
-<img width="1285" alt="SCR-20250626-oney" src="https://github.com/user-attachments/assets/a1a211d9-dec4-440b-8c74-848d7b03ff52" />
+<img width="1285" alt="Screenshot of a Zed editor window with the extension enabled" src="https://github.com/user-attachments/assets/a1a211d9-dec4-440b-8c74-848d7b03ff52" />
 
 ## Usage
 
-Add the following to your Zed settings:
+After installing the extension via `Install Dev Extension`, add the following to your Zed `settings.json`:
 
-```json
+```js
 {
-  "lsp_document_colors": "background"
+    // ...
+    // "inlay" adds a box next to the color code,
+    // "background" changes the color code's background
+    "lsp_document_colors": "inlay",
+    // ...
 }
 ```
 
